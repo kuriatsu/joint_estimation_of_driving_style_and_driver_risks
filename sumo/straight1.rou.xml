@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-04-29 22:53:09 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="other_0"/>
+    <vType id="other_1" maxSpeed="5.0" color="50,32,0" lcOpposite="0.0"/>
+    <vType id="other_2" maxSpeed="15.0" color="50,32,0" lcOpposite="0.0"/>
+    <vType id="other_3" maxSpeed="30.0" color="50,64,0" lcOpposite="0.0"/>
+    <vType id="other_4" maxSpeed="60.0" color="50,128,0" lcOpposite="0.0"/>
+    <vType id="ego_0" maxSpeed="40.0" color="32,0,50" lcOpposite="1.0"/>
+    <vType id="ego_1" maxSpeed="40.0" color="64,0,50" lcOpposite="10.0"/>
+    <vType id="ego_2" maxSpeed="40.0" color="128,0,50" lcOpposite="50.0"/>
+    <vType id="ego_3" maxSpeed="40.0" color="128,0,50" lcOpposite="100.0"/>
+    <vType id="ego_4" maxSpeed="40.0" color="128,0,50" lcOpposite="200.0"/>
+    <vType id="ego_5" maxSpeed="40.0" color="128,0,50" lcOpposite="400.0"/>
+    <vType id="ego_6" maxSpeed="40.0" color="128,0,50" lcOpposite="800.0"/>
+    <vType id="ego_7" maxSpeed="40.0" color="128,0,50" lcOpposite="1000.0"/>
+    <vType id="obs" maxSpeed="5.0"/>
+    <vTypeDistribution id="ego_dist" vTypes="ego_0 ego_1 ego_2"/>
+    <vTypeDistribution id="other_dist" vTypes="other_0 other_1 other_2 other_3 other_4"/>
+    <!-- Routes -->
+    <route id="r_0" edges="E0" color="yellow"/>
+    <route id="r_1" edges="-E0" color="yellow"/>
+    <route id="r_2" edges="E0" color="yellow"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="t_3" type="ego_0" begin="0.00" route="r_1" end="3600.00" vehsPerHour="100"/>
+    <flow id="t_0" type="obs" begin="0.00" route="r_1" end="3600.00" vehsPerHour="100"/>
+    <flow id="t_1" type="other_dist" begin="0.00" route="r_2" end="3600.00" vehsPerHour="250"/>
+</routes>

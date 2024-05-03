@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-04-30 23:50:24 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="v_10" maxSpeed="10.00" color="10,255,78"/>
+    <vType id="v_20" maxSpeed="20.00" color="0,255,98"/>
+    <vType id="v_30" maxSpeed="30.00" color="cyan"/>
+    <vType id="v_40" maxSpeed="40.00" color="0,131,255"/>
+    <vType id="v_50" maxSpeed="50.00" color="47,0,255"/>
+    <vType id="v_60" maxSpeed="60.00" color="173,0,255"/>
+    <vType id="v_80_1" maxSpeed="80.00" color="black" lcSpeedGain="10" lcAssertive="0.1" tau="20"/>
+    <vType id="v_80_2" maxSpeed="80.00" color="yellow" lcSpeedGain="1" lcAssertive="10.0"/>
+    <vType id="v_80_3" maxSpeed="80.00" color="blue" lcSpeedGain="1" tau="10"/>
+    <vType id="v_80" maxSpeed="80.00" color="red" lcSpeedGain="1000" lcAssertive="10" lcOvertakeRight="10"/>
+    <!--vType id="v_80" maxSpeed="80.00" color="red" lcSpeedGain="1000" lcAssertive="10.0" lcOvertakeRight="1.0" lcKeepRight="0.0"/-->
+    <vTypeDistribution id="td_0" vTypes="v_10 v_20 v_30 v_40" probabilities="0.50 0.50 0.50 0.50"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="t_0" type="td_0" begin="0.00" departLane="0" from="E0" to="E0" end="3600.00" vehsPerHour="300"/>
+    <flow id="t_2" type="td_0" begin="0.00" departLane="1" from="E0" to="E0" end="3600.00" vehsPerHour="300"/>
+    <flow id="t_3" type="td_0" begin="0.00" departLane="2" from="E0" to="E0" end="3600.00" vehsPerHour="300"/>
+    <flow id="t_4" type="td_0" begin="0.00" departLane="3" from="E0" to="E0" end="3600.00" vehsPerHour="300"/>
+    <flow id="t_5" type="td_0" begin="0.00" departLane="4" from="E0" to="E0" end="3600.00" vehsPerHour="300"/>
+    <!--flow id="t_4" type="td_0" begin="0.00" departLane="3" from="E0" to="E0" end="3600.00" vehsPerHour="800"/-->
+    <trip id="t_80_3" type="v_80" depart="120.00" from="E0" to="E0"/>
+</routes>

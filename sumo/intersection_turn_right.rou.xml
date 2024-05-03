@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-04-26 04:30:43 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="other_0"/>
+    <vType id="other_1" maxSpeed="10.0" color="50,32,0"/>
+    <vType id="other_2" maxSpeed="20.0" color="50,32,0"/>
+    <vType id="other_3" maxSpeed="30.0" color="50,64,0"/>
+    <vType id="other_4" maxSpeed="40.0" color="50,128,0"/>
+    <!-- ego vehicle -->
+    <vType id="ego_imp_0" color="32,0,50" impatience="0.0"/>
+    <vType id="ego_imp_1" color="64,0,50" impatience="0.5"/>
+    <vType id="ego_imp_2" color="128,0,50" impatience="2.0"/>
+    <vType id="ego_ign_0" color="0,0,32" jmIgnoreKeepClearTime="0.1"/>
+    <vType id="ego_ign_1" color="0,0,64" jmIgnoreKeepClearTime="0.5"/>
+    <vType id="ego_ign_2" color="0,0,128" jmIgnoreKeepClearTime="2.0"/>
+    <!-- obstacle -->
+    <vType id="obs_0" minGap="2.00" impatience="0.00" jmIgnoreKeepClearTime="0.5" accel="4" decel="5"/>
+    <!-- Routes -->
+    <!-- E0: bottom, E1: top, E2:right, E3: left, +: bottom-top or left-right -->
+    <route id="r_0" edges="-E3 E1" color="yellow"/>
+    <route id="r_1" edges="-E3 -E2" color="yellow"/>
+    <route id="r_2" edges="-E3 -E0" color="yellow"/>
+    <route id="r_3" edges="-E1 E3" color="yellow"/>
+    <route id="r_4" edges="-E1 -E2" color="yellow"/>
+    <route id="r_5" edges="-E1 -E0" color="yellow"/>
+    <route id="r_6" edges="E2 E3" color="yellow"/>
+    <route id="r_7" edges="E2 E1" color="yellow"/>
+    <route id="r_8" edges="E2 -E0" color="yellow"/>
+    <route id="r_9" edges="E0 E1" color="yellow"/>
+    <route id="r_10" edges="E0 -E2" color="yellow"/>
+    <vTypeDistribution id="other_dist" vTypes="other_0 other_1 other_2 other_3 other_4"/>
+    <vTypeDistribution id="ego_dist" vTypes="ego_imp_0 ego_imp_1 ego_imp_2"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="f_0" type="other_dist" begin="0.00" route="r_5" end="3600.00" vehsPerHour="2000"/>
+    <flow id="f_1" type="ego_dist" begin="0.00" route="r_10" end="3600.00" vehsPerHour="2000"/>
+    <!--trip id="t_11" type="t_3" departPos="40" depart="0.00" from="-E0" to="-E0"/-->
+</routes>
